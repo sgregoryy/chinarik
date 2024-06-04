@@ -2,7 +2,7 @@ import { fromArrayBuffer } from "geotiff";
 
 const HomePage = () =>{
     return(
-        <div cla>
+        <div className="main-container">
             <input type="file" id="file-input" onChange={async (e) => await imageTiff(e.target.files[0])}></input>
             <canvas id='canvas'></canvas>
         </div>
